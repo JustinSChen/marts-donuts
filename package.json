@@ -1,6 +1,6 @@
 {
-  "name": "donut-shop",
-  "homepage": "https://JustinSChen.github.io/marts-donuts",
+  "name": "marts-donuts",
+  "homepage": "https://justinschen.github.io/marts-donuts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
