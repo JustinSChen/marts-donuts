@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import logo from '../assets/logo.svg';
 
 const Nav = styled.nav`
   position: sticky;
@@ -31,7 +32,7 @@ const NavLinks = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-      <img src="../assets/logo.svg" />
+      <img src={logo} />
       <NavLinks>
         <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
