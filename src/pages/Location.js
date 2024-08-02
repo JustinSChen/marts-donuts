@@ -6,13 +6,13 @@ const Location = () => {
     <div class="container">
       <div class="left">
         <div class="location">
-            <h2>LOCATION</h2>
+            <h2>LOCATION:</h2>
             <p>150 W El Norte Pkwy, Escondido, CA 92026</p>
             <p>+1 (760) 741-0717</p>
             <p>martsdonuts@gmail.com</p>
             <button>Get Directions &#x203A;</button>
         </div>
-        <h2>HOURS</h2>
+        <h2>HOURS:</h2>
         <ul>
             <li><span className="day">Sunday</span> <span className="time">4:00 AM - 5:00 PM</span></li>
             <li><span className="day">Monday</span> <span className="time">4:00 AM - 5:00 PM</span></li>
