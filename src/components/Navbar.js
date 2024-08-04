@@ -15,11 +15,11 @@ const Navbar = () => {
       </div>
       <div className="nav-links">
         <a href="/">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/catering">Catering</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact Us</a>
-        <a href="/location">Location</a>
+        <a href="/#/menu">Menu</a>
+        <a href="/#/catering">Catering</a>
+        <a href="/#/about">About</a>
+        <a href="/#/contact">Contact Us</a>
+        <a href="/#/location">Location</a>
       </div>
     </nav>
   );
