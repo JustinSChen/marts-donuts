@@ -13,7 +13,7 @@ import '../src/App.scss';
 
 const App = () => {
   return (
-    <Router basename="/">
+    <Router basename="/marts-donuts">
       <GlobalStyles />
       <Navbar />
       <Routes>
