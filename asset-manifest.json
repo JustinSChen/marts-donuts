@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/marts-donuts/static/css/main.6283ad29.css",
-    "main.js": "/marts-donuts/static/js/main.8b6d2cbb.js",
+    "main.js": "/marts-donuts/static/js/main.cd50de79.js",
     "static/media/logo.svg": "/marts-donuts/static/media/logo.4221e641bd01bedbaf1ac4e648ec2ec6.svg",
     "index.html": "/marts-donuts/index.html",
     "main.6283ad29.css.map": "/marts-donuts/static/css/main.6283ad29.css.map",
-    "main.8b6d2cbb.js.map": "/marts-donuts/static/js/main.8b6d2cbb.js.map"
+    "main.cd50de79.js.map": "/marts-donuts/static/js/main.cd50de79.js.map"
   },
   "entrypoints": [
     "static/css/main.6283ad29.css",
-    "static/js/main.8b6d2cbb.js"
+    "static/js/main.cd50de79.js"
   ]
 }
