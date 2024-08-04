@@ -1,47 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import logo from '../assets/logo.svg';
-
-const Nav = styled.nav`
-  position: sticky;
-  top: 0;
-  background: #FFFEF5;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-  padding-left: 160px;
-  padding-right: 160px;
-`;
-
-const NavLinks = styled.div`
-  a {
-    color: #3D2A2A;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  a:last-of-type {
-    margin-right: 0;
-  }
-`;
 
 const Navbar = () => {
   return (
-    <Nav>
-      <img src={logo} />
-      <NavLinks>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/catering">Catering</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact Us</Link>
-        <Link to="/location">Location</Link>
-      </NavLinks>
-    </Nav>
+    <nav className="nav">
+      <div className="nav-container">
+        <div className="logo">
+          <img src={logo} alt="Donut Shop Logo" />
+        </div>
+        <div className="nav-text">
+          <p>+1 (760) 741-0717</p>
+        </div>
+      </div>
+      <div className="nav-links">
+        <a href="/">Home</a>
+        <a href="/menu">Menu</a>
+        <a href="/catering">Catering</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/location">Location</a>
+      </div>
+    </nav>
   );
 };
 

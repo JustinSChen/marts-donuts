@@ -7,8 +7,9 @@ import Menu from './pages/Menu';
 import Catering from './pages/Catering';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Location from './pages/Location';  // Add this import
+import Location from './pages/Location';
 import GlobalStyles from './GlobalStyles';
+import '../src/App.scss';
 
 const App = () => {
   return (
