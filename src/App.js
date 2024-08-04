@@ -13,7 +13,7 @@ import '../src/App.scss';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <GlobalStyles />
       <Navbar />
       <Routes>
