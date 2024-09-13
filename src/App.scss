@@ -151,6 +151,12 @@ h2 {
         height: 32px;
         width: 32px;
       }
+      .icon {
+        transition: all 250ms ease-out;
+      }
+      .icon.open {
+        transform: rotate(90deg);
+      }
     }
     .logo {
       display: flex;
@@ -158,12 +164,19 @@ h2 {
       justify-content: center;
     }
     .overlay {
-      &.open {
-        background: #C50B2A;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-      }
+      left: -100vw;
+      transition: all 250ms ease-out;
+      background: transparent;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: 1000;
+      top: 68px;
+    }
+    
+    .overlay.open {
+      background: #C50B2A;
+      left: 0;
     }
   }
 }

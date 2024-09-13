@@ -11,6 +11,7 @@ const Navbar = () => {
     const mediaQuery = window.matchMedia("(max-width: 600px)");
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
+      setMenuOpen(false);
     };
 
     handleMediaQueryChange(mediaQuery);
@@ -35,12 +36,11 @@ const Navbar = () => {
       {isMobile ? (
         <nav className="mobile nav">
           <div className="icons">
-              { menuOpen 
-              ? 
-              <FontAwesomeIcon icon={faXmark} onClick={closeNav}/>
-              :
-              <FontAwesomeIcon icon={faBars} onClick={openNav}/>
-              }
+                    <FontAwesomeIcon 
+            icon={menuOpen ? faXmark : faBars} 
+            onClick={menuOpen ? closeNav : openNav} 
+            className={`icon ${menuOpen ? 'open' : ''}`}
+          />
           </div>
           <div className="logo">
               <img src={logo} alt="Donut Shop Logo" />
