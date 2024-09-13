@@ -73,65 +73,96 @@ h2 {
 
 // NavBar
 .nav {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding-top: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), /* Larger shadow for depth */
-              0 1px 3px rgba(0, 0, 0, 0.08); /* Smaller shadow for softness */
-
-  .nav-container {
-    width: 100%;
+  &.desktop {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding-top: 48px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-
-    .logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-
-      img {
-        height: 67px;
-        width: 551px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+  
+    .nav-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+  
+      .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+  
+        img {
+          height: 67px;
+          width: 551px;
+        }
+      }
+  
+      .nav-text {
+        margin-left: auto;
+        text-align: right;
+        margin-right: 160px;
       }
     }
-
-    .nav-text {
-      margin-left: auto;
-      text-align: right;
-      margin-right: 160px;
+  
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 48px;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-top: 24px;
+      padding-bottom: 40px;
+      font-size: 20px;
+  
+      a {
+        margin-right: 64px;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 12px;
+          color:#C50B2A;
+        }
+  
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
     }
   }
 
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 48px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 24px;
-    padding-bottom: 40px;
-    font-size: 20px;
-
-    a {
-      margin-right: 64px;
-      text-decoration: none;
-      
-      &:hover {
-        text-decoration: underline;
-        text-underline-offset: 12px;
-        color:#C50B2A;
+  &.mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .icons {
+      position: absolute;
+      left: 20px;
+      * {
+        color: #C50B2A;
       }
-
-      &:last-of-type {
-        margin-right: 0;
+      svg {
+        height: 32px;
+        width: 32px;
+      }
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .overlay {
+      &.open {
+        background: #C50B2A;
+        position: fixed;
+        height: 100%;
+        width: 100%;
       }
     }
   }
