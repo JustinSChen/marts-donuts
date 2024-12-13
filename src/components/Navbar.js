@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
+import facebook from "../assets/Facebook.svg"
+import instagram from "../assets/Instagram.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -43,16 +45,25 @@ const Navbar = () => {
           />
           </div>
           <div className="logo">
+              <a href="/#/" onClick={closeNav}>
               <img src={logo} alt="Donut Shop Logo" />
+              </a>
           </div>
           <div className={`overlay ${menuOpen ? 'open' : ''
           }`}>
             {menuOpen ? 
             <>
-            <a href="/#/menu">Menu</a>
-            <a href="/#/location">Location</a>
-            <a href="/#/about">Our story</a></>  : <></>
-            
+            <span class="number">(760) 741-0717</span>
+            <a class="link" href="/#/menu" onClick={closeNav}>Menu</a>
+            <a class="link" href="/#/location" onClick={closeNav}>Location</a>
+            <a class="link" href="/#/about" onClick={closeNav}>Our story</a>
+            <a class="social" href="https://www.facebook.com/" target="_blank" onClick={closeNav}>
+            <img src={facebook} alt="Facebook" />
+            </a>
+            <a class="social" href="https://www.instagram.com/" target="_blank" onClick={closeNav}>
+            <img src={instagram} alt="Instagram" />
+            </a>
+            </>  : <></>
             }
           </div>
         </nav>
@@ -60,7 +71,9 @@ const Navbar = () => {
         <nav className="desktop nav">
           <div className="nav-container">
             <div className="logo">
+            <a href="/#/">
               <img src={logo} alt="Donut Shop Logo" />
+              </a>
             </div>
             <div className="nav-text">
               <p>+1 (760) 741-0717</p>
@@ -69,10 +82,8 @@ const Navbar = () => {
           <div className="nav-links">
             <a href="/">Home</a>
             <a href="/#/menu">Menu</a>
-            <a href="/#/catering">Catering</a>
-            <a href="/#/about">About</a>
-            <a href="/#/contact">Contact Us</a>
             <a href="/#/location">Location</a>
+            <a href="/#/story">Story</a>
           </div>
         </nav>
       )}
