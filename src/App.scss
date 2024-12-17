@@ -1,5 +1,6 @@
 * {
   color: #3D2A2A;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
@@ -44,7 +45,7 @@ h2 {
   }
 }
 .pdf {
-  height: 844px;
+  height: 485px;
   border: 1px solid black;
   margin: 180px 24px;
   display: flex;
@@ -54,6 +55,49 @@ h2 {
     font-weight: bold;
     color: black;
     text-align: center;
+  }
+}
+.story {
+  background-image: url("../src/assets/donuts.jpg");
+  height: 844px;
+  margin-bottom: 80px;
+  background-position-x: 10%;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .box{
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(-50%); /* Adjust to center exactly */
+    left: 50%;
+
+    background: white;
+    border-radius: 8px;
+    padding: 64px 24px;
+    width: calc(100% - 64px);
+    box-shadow: 0 4px 28px rgba(0, 0, 0, 0.3); /* Add shadow */
+
+    h3{
+      margin-top: 0;
+      font-size:32px
+    }
+
+    p{
+      font-size: 20px;
+    }
+
+    a {
+      color: #C50B2A;
+      font-weight: bold;
+      font-size: 20px;
+      .arrow {
+        * {
+          color:#C50B2A !important;
+
+        }
+      }
+    }
   }
 }
 .location-container {
@@ -245,17 +289,22 @@ h2 {
 }
 
 footer {
-  padding-left: 356px;
-  padding-right: 356px;
+  // padding-left: 356px;
+  // padding-right: 356px;
   color: #3D2A2A;
-  position: fixed;
   bottom: 0;
   width: 100%;
+  padding-top: 80px;
 
+  .logo {
+    display: flex
+;
+    justify-content: center;
+  }
   .footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
   }
   .footer-bottom {
     text-align: center;
@@ -266,9 +315,16 @@ footer {
     padding-bottom: 40px;
     font-size: 20px;
 
+    .social {
+      margin-right: 12px;
+      text-align: center;
+    }
+
     a {
-      margin-right: 64px;
       text-decoration: none;
+      
+      display: block;
+      text-align: center;
       
       &:hover {
         text-decoration: underline;

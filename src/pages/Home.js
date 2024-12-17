@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   return (
@@ -12,6 +14,16 @@ const Home = () => {
       </div>
       <div class="pdf">
         <p>PDF MENU</p>
+      </div>
+      <div class="story">
+        <div class="box">
+          <h3>OUR STORY</h3>
+          <p>We've been serving Escondido for over 20 years!</p>
+          <a>Learn more <FontAwesomeIcon 
+                      icon={faArrowRight} 
+                      className={`arrow`}
+                    /></a>
+        </div>
       </div>
     </div>
   );

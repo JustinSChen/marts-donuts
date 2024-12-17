@@ -8,6 +8,9 @@ import Location from './pages/Location';
 import GlobalStyles from './GlobalStyles';
 import '../src/App.scss';
 import Story from './pages/Story';
+import "@fontsource/raleway"; // Defaults to weight 400
+import "@fontsource/raleway/400.css"; // Specify weight
+import "@fontsource/raleway/400-italic.css"; // Specify weight and style
 
 const App = () => {
   return (
