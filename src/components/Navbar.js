@@ -10,7 +10,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 600px)");
+    const mediaQuery = window.matchMedia("(max-width: 720px)");
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
       setMenuOpen(false);
@@ -76,7 +76,7 @@ const Navbar = () => {
               </a>
             </div>
             <div className="nav-text">
-              <p>+1 (760) 741-0717</p>
+              <p>(760) 741-0717</p>
             </div>
           </div>
           <div className="nav-links">

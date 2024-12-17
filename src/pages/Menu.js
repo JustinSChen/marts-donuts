@@ -9,13 +9,8 @@ const donuts = [
 
 const Menu = () => {
   return (
-    <div>
-      <h2>Our Menu</h2>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {donuts.map(donut => (
-          <DonutCard key={donut.id} donut={donut} />
-        ))}
-      </div>
+    <div class="pdf">
+      <p>PDF MENU</p>
     </div>
   );
 };
