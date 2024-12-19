@@ -10,7 +10,12 @@ const donuts = [
 const Menu = () => {
   return (
     <div class="pdf">
-      <p>PDF MENU</p>
+              <iframe
+          src="https://marts-donuts.s3.us-east-1.amazonaws.com/menu.pdf"
+          width="100%"
+          height="100%"
+          title="PDF Viewer"
+        ></iframe>
     </div>
   );
 };

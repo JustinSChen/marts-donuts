@@ -4,6 +4,7 @@ import facebook from "../assets/Facebook.svg"
 import instagram from "../assets/Instagram.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -45,7 +46,7 @@ const Navbar = () => {
           />
           </div>
           <div className="logo">
-              <a href="/#/" onClick={closeNav}>
+              <a href="/" onClick={closeNav}>
               <img src={logo} alt="Donut Shop Logo" />
               </a>
           </div>
@@ -54,15 +55,15 @@ const Navbar = () => {
             {menuOpen ? 
             <>
             <span class="number">(760) 741-0717</span>
-            <a class="link" href="/#/menu" onClick={closeNav}>Menu</a>
-            <a class="link" href="/#/location" onClick={closeNav}>Location</a>
-            <a class="link" href="/#/about" onClick={closeNav}>Our story</a>
-            <a class="social" href="https://www.facebook.com/" target="_blank" onClick={closeNav}>
-            <img src={facebook} alt="Facebook" />
-            </a>
-            <a class="social" href="https://www.instagram.com/" target="_blank" onClick={closeNav}>
+            <Link class="link" to="/menu" onClick={closeNav}>Menu</Link>
+            <Link class="link" to="/location" onClick={closeNav}>Location</Link>
+            <Link class="link" to="/about" onClick={closeNav}>Our story</Link>
+            <Link class="social" to="https://www.facebook.com/" target="_blank" onClick={closeNav}>
+              <img src={facebook} alt="Facebook" />
+            </Link>
+            <Link class="social" to="https://www.instagram.com/" target="_blank" onClick={closeNav}>
             <img src={instagram} alt="Instagram" />
-            </a>
+            </Link>
             </>  : <></>
             }
           </div>
@@ -71,7 +72,7 @@ const Navbar = () => {
         <nav className="desktop nav">
           <div className="nav-container">
             <div className="logo">
-            <a href="/#/">
+            <a href="/">
               <img src={logo} alt="Donut Shop Logo" />
               </a>
             </div>
@@ -80,10 +81,10 @@ const Navbar = () => {
             </div>
           </div>
           <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/#/menu">Menu</a>
-            <a href="/#/location">Location</a>
-            <a href="/#/story">Story</a>
+            <Link to="/" onClick={closeNav}>Home</Link>
+            <Link to="/menu" onClick={closeNav}>Menu</Link>
+            <Link to="/location" onClick={closeNav}>Location</Link>
+            <Link to="/story" onClick={closeNav}>Story</Link>
           </div>
         </nav>
       )}
