@@ -420,6 +420,8 @@ footer {
 }
 
 .story-page {
+  margin: auto;
+  max-width: 1200px;
   padding-left: 16px;
   padding-right: 16px;
   h2 {
@@ -457,7 +459,7 @@ footer {
   @media only screen and (min-width: 720px) {
     .something {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       // img:last-of-type {
       //   margin-left: 16px;
       // }
