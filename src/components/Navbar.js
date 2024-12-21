@@ -57,7 +57,7 @@ const Navbar = () => {
             <span class="number">(760) 741-0717</span>
             <Link class="link" to="/menu" onClick={closeNav}>Menu</Link>
             <Link class="link" to="/location" onClick={closeNav}>Location</Link>
-            <Link class="link" to="/about" onClick={closeNav}>Our story</Link>
+            <Link class="link" to="/story" onClick={closeNav}>Our story</Link>
             <Link class="social" to="https://www.facebook.com/" target="_blank" onClick={closeNav}>
               <img src={facebook} alt="Facebook" />
             </Link>
