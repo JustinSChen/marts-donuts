@@ -30,7 +30,7 @@ const Home = () => {
         <div class="box">
           <h3>OUR STORY</h3>
           <p>We've been serving Escondido for over 20 years!</p>
-          <a href="/story">Learn more <FontAwesomeIcon 
+          <a class="no-underline" href="/story">Learn more <FontAwesomeIcon 
                       icon={faArrowRight} 
                       className={`arrow`}
                     /></a>

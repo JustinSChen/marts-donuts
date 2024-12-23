@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Location = () => {
   return (
@@ -8,7 +10,10 @@ const Location = () => {
         <div className="location">
             <h2>LOCATION</h2>
             <p className="address">150 W El Norte Pkwy, Escondido, CA 92026</p>
-            <Link className="directions" to="/contact">Get directions &#x203A;</Link>
+            <Link className="directions" to="/contact">Get directions <FontAwesomeIcon 
+                                  icon={faArrowRight} 
+                                  className={`arrow`}
+                                /></Link>
         </div>
         <div className="hours">
           <h2>HOURS</h2>

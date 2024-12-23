@@ -58,12 +58,6 @@ const Navbar = () => {
             <Link class="link" to="/menu" onClick={closeNav}>Menu</Link>
             <Link class="link" to="/location" onClick={closeNav}>Location</Link>
             <Link class="link" to="/story" onClick={closeNav}>Our story</Link>
-            <Link class="social" to="https://www.facebook.com/" target="_blank" onClick={closeNav}>
-              <img src={facebook} alt="Facebook" />
-            </Link>
-            <Link class="social" to="https://www.instagram.com/" target="_blank" onClick={closeNav}>
-            <img src={instagram} alt="Instagram" />
-            </Link>
             </>  : <></>
             }
           </div>
@@ -72,14 +66,14 @@ const Navbar = () => {
         <nav className="desktop nav">
           <div className="nav-container">
             <div className="logo">
-            <a href="/">
-              <img src={logo} alt="Donut Shop Logo" />
+              <a href="/">
+                <img src={logo} alt="Donut Shop Logo" />
               </a>
             </div>
-            <div className="nav-text">
-              <p>(760) 741-0717</p>
-            </div>
           </div>
+            <div className="nav-text">
+              <p class="phone">(760) 741-0717</p>
+            </div>
           <div className="nav-links">
             <Link to="/" onClick={closeNav}>Home</Link>
             <Link to="/menu" onClick={closeNav}>Menu</Link>

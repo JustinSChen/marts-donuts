@@ -31,14 +31,6 @@ const Footer = () => {
               <img src={logo} />
             </div>
             <div className="footer-links">
-              <div class="social-block">
-              <a class="social" href="https://www.facebook.com/" target="_blank">
-              <img src={facebook} alt="Facebook" />
-              </a>
-              <a class="social" href="https://www.instagram.com/" target="_blank">
-              <img src={instagram} alt="Instagram" />
-              </a>
-              </div>
               <a href="/menu">Menu</a>
               <a href="/catering">Location</a>
               <a href="/story">Our story</a>
@@ -47,7 +39,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <p className="bold">(760) 741-0717</p>
             <p className="bold">martsdonuts@gmail.com</p>
-            <p>&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
+            <p class="copyright">&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
           </div>
         </footer>
         ) : (
@@ -55,14 +47,6 @@ const Footer = () => {
           <div className="footer-top">
             <div class="logo">
               <img src={logo} />
-              <div class="social-block">
-              <a class="social" href="https://www.facebook.com/" target="_blank">
-              <img src={facebook} alt="Facebook" />
-              </a>
-              <a class="social" href="https://www.instagram.com/" target="_blank">
-              <img src={instagram} alt="Instagram" />
-              </a>
-              </div>
             </div>
             <div className="footer-links">
               <a href="/menu">Menu</a>
@@ -71,9 +55,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p className="bold">(760) 741-0717</p>
-            <p className="bold">martsdonuts@gmail.com</p>
-            <p>&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
+            <a href="tel:+17607410717">(760) 741-0717</a>
+            <a href="mailto:martsdonuts@gmail.com">martsdonuts@gmail.com</a>
+            <p class="copyright">&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
           </div>
         </footer>
         )

@@ -1,6 +1,8 @@
 * {
   color: #3D2A2A;
   font-family: "Raleway", sans-serif;
+  font-variant-numeric: lining-nums;
+ font-feature-settings: "lnum";
 }
 
 h2 {
@@ -33,6 +35,8 @@ h2 {
   }
   p {
     color: white; 
+    font-weight: 500;
+    line-height: 24px;
   }
   .overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -109,6 +113,7 @@ h2 {
 
     p{
       font-size: 20px;
+      font-weight: 500;
     }
 
     a {
@@ -117,9 +122,14 @@ h2 {
       font-size: 20px;
       .arrow {
         * {
-          color:#C50B2A !important;
-
+          color:#C50B2A;
+          &:hover {
+            color: #A1001B;
+          }
         }
+      }
+      &:hover {
+        color: #A1001B;
       }
     }
   }
@@ -167,6 +177,19 @@ h2 {
         color:#C50B2A;
         font-weight: bold;
         font-size: 16px;
+
+        &:hover {
+          color: #A1001B;
+        }
+
+        .arrow {
+          * {
+            color:#C50B2A;
+            &:hover {
+              color: #A1001B;
+            }
+          }
+        }
       }
       margin-bottom: 64px;
   }
@@ -221,20 +244,12 @@ h2 {
       position: relative;
   
       .logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-  
         img {
-          height: 67px;
-          width: 551px;
+          width: 480px;
         }
       }
   
       .nav-text {
-        margin-left: auto;
-        text-align: right;
-        margin-right: 160px;
       }
     }
   
@@ -332,10 +347,14 @@ footer {
   color: #3D2A2A;
   bottom: 0;
   width: 100%;
-  padding-top: 80px;
+  padding-bottom: 80px;
 
   @media only screen and (min-width: 720px) {
     padding-top: 0;
+  }
+
+  .copyright {
+    color: #767676;
   }
 
   .logo {
@@ -350,6 +369,20 @@ footer {
   }
   .footer-bottom {
     text-align: center;
+    margin: auto;
+    max-width: 70%;
+    border-top: 1px solid #D8E2F0;
+    margin-top: 16px;
+    padding-top: 24px;
+    a {
+      display: block;
+      font-weight: 500;
+      text-decoration: none;
+      margin-bottom: 16px;
+      &:hover {
+        color: #C50B2A;
+      }
+    }
   }
   .footer-links {
     font-weight: bold;
@@ -409,7 +442,7 @@ footer {
     .footer-links{
       display: flex;
       a {
-        margin-right: 16px;
+        margin-right: 48px;
       }
       a:last-of-type {
         margin-right: 0;
@@ -479,4 +512,15 @@ footer {
 
 .view-menu {
   cursor: pointer;
+  font-weight: 500;
+}
+
+.no-underline, .directions {
+  text-decoration: none;
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
 }
