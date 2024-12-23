@@ -456,6 +456,7 @@ footer {
   max-width: 1200px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 80px;
   h2 {
     font-size: 48px;
     font-weight: 900;
@@ -500,9 +501,16 @@ footer {
 
   img {
     width: 100%;
-    max-width: 720px;
+    max-width: 1200px;
     border-radius: 8px;
     margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media only screen and (min-width: 720px) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
   }
   .left {
     text-align: left;
@@ -530,4 +538,30 @@ canvas {
   height: auto !important;
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+.second-story, .third-story, .fourth-story {
+  @media only screen and (min-width: 720px) {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 480px;
+    }
+  }
+}
+
+.second-story, .fourth-story {
+  @media only screen and (min-width: 720px) {
+    .description {
+      margin-right: 80px;
+    }
+  }
+}
+.third-story {
+  @media only screen and (min-width: 720px) {
+    .description {
+      margin-left: 80px;
+    }
+  }
 }

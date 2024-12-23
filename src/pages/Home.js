@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 import { pdfjs, Document, Page } from 'react-pdf';
 
@@ -44,10 +45,10 @@ const Home = () => {
         <div className="box">
           <h3>OUR STORY</h3>
           <p>We've been serving Escondido for over 20 years!</p>
-          <a className="no-underline" href="/story">Learn more <FontAwesomeIcon 
+          <Link className="link no-underline" to="/story">Learn more <FontAwesomeIcon 
                       icon={faArrowRight} 
                       className={`arrow`}
-                    /></a>
+                    /></Link>
         </div>
       </div>
     </div>
