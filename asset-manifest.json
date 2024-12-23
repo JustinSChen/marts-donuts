@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/marts-donuts/static/css/main.0255f09c.css",
-    "main.js": "/marts-donuts/static/js/main.f1e160be.js",
+    "main.css": "/marts-donuts/static/css/main.3360a344.css",
+    "main.js": "/marts-donuts/static/js/main.f60a1e62.js",
     "static/media/home-bg.jpg": "/marts-donuts/static/media/home-bg.946bf5196f2d15a1a00b.jpg",
     "static/media/donuts.jpg": "/marts-donuts/static/media/donuts.5e53ff190f81e991f47f.jpg",
     "static/media/1.jpg": "/marts-donuts/static/media/1.b27c4be8388e9e13d6dc.jpg",
@@ -53,11 +53,11 @@
     "index.html": "/marts-donuts/index.html",
     "static/media/Facebook.svg": "/marts-donuts/static/media/Facebook.3343129511901e8b087393c987075f6d.svg",
     "static/media/Facebook_b.svg": "/marts-donuts/static/media/Facebook_b.7ba3249d3a2926656173cdc06655afaf.svg",
-    "main.0255f09c.css.map": "/marts-donuts/static/css/main.0255f09c.css.map",
-    "main.f1e160be.js.map": "/marts-donuts/static/js/main.f1e160be.js.map"
+    "main.3360a344.css.map": "/marts-donuts/static/css/main.3360a344.css.map",
+    "main.f60a1e62.js.map": "/marts-donuts/static/js/main.f60a1e62.js.map"
   },
   "entrypoints": [
-    "static/css/main.0255f09c.css",
-    "static/js/main.f1e160be.js"
+    "static/css/main.3360a344.css",
+    "static/js/main.f60a1e62.js"
   ]
 }
