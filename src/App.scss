@@ -53,7 +53,6 @@ h2 {
 }
 .pdf {
   height: 485px;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -523,4 +522,10 @@ footer {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 0;
+}
+
+canvas {
+  margin: auto;
+  max-width: 100%;
+  height: auto !important;
 }

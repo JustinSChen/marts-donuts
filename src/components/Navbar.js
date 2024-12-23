@@ -54,10 +54,10 @@ const Navbar = () => {
           }`}>
             {menuOpen ? 
             <>
-            <span class="number">(760) 741-0717</span>
-            <Link class="link" to="/menu" onClick={closeNav}>Menu</Link>
-            <Link class="link" to="/location" onClick={closeNav}>Location</Link>
-            <Link class="link" to="/story" onClick={closeNav}>Our story</Link>
+            <span className="number">(760) 741-0717</span>
+            <Link className="link" to="/menu" onClick={closeNav}>Menu</Link>
+            <Link className="link" to="/location" onClick={closeNav}>Location</Link>
+            <Link className="link" to="/story" onClick={closeNav}>Our story</Link>
             </>  : <></>
             }
           </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
             </div>
           </div>
             <div className="nav-text">
-              <p class="phone">(760) 741-0717</p>
+              <p className="phone">(760) 741-0717</p>
             </div>
           <div className="nav-links">
             <Link to="/" onClick={closeNav}>Home</Link>

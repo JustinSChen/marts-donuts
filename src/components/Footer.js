@@ -25,9 +25,9 @@ const Footer = () => {
     <>
       {
         isMobile ? (
-          <footer class="mobile">
+          <footer className="mobile">
           <div className="footer-top">
-            <div class="logo">
+            <div className="logo">
               <img src={logo} />
             </div>
             <div className="footer-links">
@@ -39,13 +39,13 @@ const Footer = () => {
           <div className="footer-bottom">
             <p className="bold">(760) 741-0717</p>
             <p className="bold">martsdonuts@gmail.com</p>
-            <p class="copyright">&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
+            <p className="copyright">&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
           </div>
         </footer>
         ) : (
-          <footer class="desktop">
+          <footer className="desktop">
           <div className="footer-top">
-            <div class="logo">
+            <div className="logo">
               <img src={logo} />
             </div>
             <div className="footer-links">
@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="footer-bottom">
             <a href="tel:+17607410717">(760) 741-0717</a>
             <a href="mailto:martsdonuts@gmail.com">martsdonuts@gmail.com</a>
-            <p class="copyright">&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
+            <p className="copyright">&copy; 2024 MARTS DONUTS IN ESCONDIDO, CA. ALL RIGHTS RESERVED.</p>
           </div>
         </footer>
         )
