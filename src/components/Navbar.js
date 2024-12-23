@@ -46,9 +46,9 @@ const Navbar = () => {
           />
           </div>
           <div className="logo">
-              <a href="/" onClick={closeNav}>
-              <img src={logo} alt="Donut Shop Logo" />
-              </a>
+              <Link to="/" onClick={closeNav}>
+                <img src={logo} alt="Donut Shop Logo" />
+              </Link>
           </div>
           <div className={`overlay ${menuOpen ? 'open' : ''
           }`}>
